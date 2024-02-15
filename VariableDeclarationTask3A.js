@@ -38,11 +38,3 @@ function changes() {
 }
 
 changes();
-
-let d =10
-
-function testinglet() {
-  console.log(d);
-  // let d=5;
-  console.log(d)
-}

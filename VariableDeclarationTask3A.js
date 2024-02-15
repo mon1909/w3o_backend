@@ -15,7 +15,7 @@ console.log(a); // the output will be 1 since its a global variable
 
 // console.log(b); // this will throw an error as b is not defined (b is defined inside the function and it is accessible only within the block)
 
-// console.log(c); // this will throw an error as b is not defined (b is defined inside the function and it is accessible only within the block)
+// console.log(c); // this will throw an error as c is not defined (c is defined inside the function and it is accessible only within the block)
 
 function changes() {
   var a = 4;
@@ -27,13 +27,22 @@ function changes() {
   console.log("Current value of c =", c);
 
   a = 7; //changing the value of a
-  console.log("After reassigning, the value of a =", b); // the output will be 7
+  console.log("After reassigning, the value of a =", a); // the output will be 7
 
   b = 8; // changing the value of b
   console.log("After reassigning, the value of b =", b); // the output will be 8
 
   // c = 9; // changing the value of c
+  // console.log("After reassigning, the value of c =", c);
   // since c is a constant variable, its value cannot be changed. hence this will throw an error
 }
 
 changes();
+
+let d =10
+
+function testinglet() {
+  console.log(d);
+  // let d=5;
+  console.log(d)
+}
